@@ -1,17 +1,17 @@
-import { RotatingTriangles } from 'react-loader-spinner';
+import { Dna } from 'react-loader-spinner';
 
 import { LoaderOverlay } from './Loader.styled';
 
 export const Loader = () => {
   return (
     <LoaderOverlay>
-      <RotatingTriangles
+      <Dna
         visible={true}
-        height="180"
-        width="180"
-        ariaLabel="rotating-triangels-loading"
+        height="280"
+        width="280"
+        ariaLabel="dna-loading"
         wrapperStyle={{ position: 'absolute', top: '30%', left: '43%' }}
-        wrapperClass="rotating-triangels-wrapper"
+        wrapperClass="dna-wrapper"
         colors={['#6e36c4', '#731468', '#f1e46d']}
       />
     </LoaderOverlay>

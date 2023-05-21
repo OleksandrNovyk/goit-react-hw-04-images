@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { createPortal } from 'react-dom';
 import propTypes from 'prop-types';
 
 import {
@@ -32,10 +31,13 @@ export const Modal = ({ src, alt, closeModal }) => {
     }
   };
 
-  return createPortal(
-    <ModalOverlay onClick={onBackdropClick}>
+  return (
+    <ModalOverlay 
+      onClick={onBackdropClick}>
       <ModalWindow>
-        <ModalPic src={src} alt={alt} />
+        <ModalPic 
+        src={src} 
+        alt={alt} />
         <ModalDescr>{alt}</ModalDescr>
       </ModalWindow>
     </ModalOverlay>,

@@ -8,7 +8,6 @@ import {
   ModalDescr,
 } from './Modal.styled';
 
-const modalRoot = document.querySelector('#modal-root');
 
 export const Modal = ({ src, alt, closeModal }) => {
   useEffect(() => {
@@ -40,8 +39,7 @@ export const Modal = ({ src, alt, closeModal }) => {
         alt={alt} />
         <ModalDescr>{alt}</ModalDescr>
       </ModalWindow>
-    </ModalOverlay>,
-    modalRoot
+    </ModalOverlay>
   );
 };
 

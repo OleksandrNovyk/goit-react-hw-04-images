@@ -2,7 +2,7 @@ import axios from 'axios';
 import Notiflix from 'notiflix';
 
 export const notifySettings = {
-  width: '380px',
+  width: '300px',
   position: 'right-top',
   distance: '10px',
   opacity: 1,
@@ -11,7 +11,7 @@ export const notifySettings = {
 };
 
 export async function fetchData(searchQuery, page) {
-  const API_KEY = '30742354-1ccc482155368d7c8e305125c';
+  const API_KEY = '34854330-0f622fa4274053bdc8367b6e2';
 
   const searchParams = new URLSearchParams({
     key: API_KEY,

@@ -89,7 +89,6 @@ export const App = () => {
       {picsArr.length === 0 && <StartText />}
       <Container>
         <ImageGallery pics={picsArr} showModal={toggleModal} />
-
         {showLoadMoreBtn && (
           <Btn
             text="Load more"

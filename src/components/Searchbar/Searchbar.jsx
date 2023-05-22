@@ -29,7 +29,10 @@ export const Searchbar = ({ onSubmit }) => {
   return (
     <Header>
       <Form onSubmit={handleSubmit}>
-        <Btn type="submit" icon={BsSearch} text="Search" status="search" />
+        <Btn type="submit" 
+        icon={BsSearch} 
+        text="Search" 
+        status="search" />
         <Input
           value={query}
           name="query"
